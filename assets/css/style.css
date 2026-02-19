@@ -1,15 +1,80 @@
+/* Variables de Diseño */
 :root {
-  --primary: #003876; /* Azul formal */
-  --accent: #d52b1e;  /* Toque sutil de la bandera */
-  --light: #f4f4f4;
+    --primary: #003876;
+    --accent: #d52b1e;
+    --glass: rgba(255, 255, 255, 0.8);
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-nav { background: var(--primary); padding: 1rem; display: flex; justify-content: space-around; }
-nav a { color: white; text-decoration: none; font-weight: bold; }
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f8f9fa; 
+    color: #333;
+}
 
-.hero { background: linear-gradient(rgba(0,56,118,0.8), rgba(0,56,118,0.8)), url('../img/escuela.jpg'); 
-        height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+/* Navegación Glassmorphism */
+.glass-nav {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-.grid-personal { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+.logo { font-size: 1.8rem; font-weight: 800; color: var(--primary); }
+.logo span { color: var(--accent); }
+
+.nav-links { display: flex; list-style: none; gap: 2rem; }
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--primary); 
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* Botón de Llamada a la Acción (CTA) */
+.btn-cta {
+    background: var(--primary);
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+}
+
+/* Grid para Galería y Personal */
+.modern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 3rem 5%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+/* Footer */
+.footer-moderno {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
