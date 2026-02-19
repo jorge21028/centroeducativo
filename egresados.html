@@ -1,0 +1,35 @@
+---
+layout: default
+title: Orgullo Egresado
+---
+
+<section class="egresados-hero">
+    <h1>Nuestros Egresados</h1>
+    <p>El testimonio vivo de nuestra calidad educativa en la República Dominicana.</p>
+</section>
+
+<section class="contenedor-egresados">
+    <div class="modern-grid">
+        {% for egresado in site.data.egresados %}
+        <div class="card-egresado">
+            <div class="foto-marco">
+                <img src="{{ egresado.foto }}" alt="{{ egresado.nombre }}">
+            </div>
+            <h3>{{ egresado.nombre }}</h3>
+            <span class="promocion">Promoción {{ egresado.promocion }}</span>
+            <p class="logro"><strong>Actualidad:</strong> {{ egresado.logro }}</p>
+            <blockquote class="testimonio">
+                "{{ egresado.testimonio }}"
+            </blockquote>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="registro-egresados">
+    <div class="card glass-card">
+        <h3>¿Eres egresado de nuestro centro?</h3>
+        <p>Queremos saber de ti. Cuéntanos tus logros y forma parte de nuestra comunidad.</p>
+        <a href="/contactos" class="btn-primary">Registrar mis datos</a>
+    </div>
+</section>
