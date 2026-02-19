@@ -1,0 +1,14 @@
+- nombre: "Lic. Roberto Matos"
+  puesto: "Director General"
+  area: "Gestión"
+  foto: "https://i.pravatar.cc/150?u=dir"
+
+- nombre: "Ing. Jorge Luis Abreu"
+  puesto: "Docente de Informática y BBDD"
+  area: "Docente"
+  foto: "https://i.pravatar.cc/150?u=jorge"
+
+- nombre: "Ana García"
+  puesto: "Secretaria Administrativa"
+  area: "Apoyo"
+  foto: "https://i.pravatar.cc/150?u=ana"
