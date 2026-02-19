@@ -1,11 +1,49 @@
 ---
 layout: default
-title: Nuestro Personal
+title: Nuestro Equipo
 ---
-<h2>Equipo de Gestión</h2>
-<div class="grid-personal">
-  {% assign gestion = site.data.staff | where: "tipo", "Gestión" %}
-  {% for miembro in gestion %}
-    <div class="card"><h3>{{ miembro.nombre }}</h3><p>{{ miembro.cargo }}</p></div>
-  {% endfor %}
+
+<section class="personal-hero">
+    <h1>Talento Humano</h1>
+    <p>Los profesionales dedicados a la formación de la juventud dominicana.</p>
+</section>
+
+<div class="contenedor-personal">
+    
+    <h2 class="titulo-area">Equipo de Gestión</h2>
+    <div class="personal-grid">
+        {% assign gestion = site.data.personal | where: "area", "Gestión" %}
+        {% for miembro in gestion %}
+        <div class="card-perfil">
+            <div class="perfil-img" style="background-image: url('{{ miembro.foto }}')"></div>
+            <h3>{{ miembro.nombre }}</h3>
+            <p class="puesto">{{ miembro.puesto }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h2 class="titulo-area">Cuerpo Docente</h2>
+    <div class="personal-grid">
+        {% assign docentes = site.data.personal | where: "area", "Docente" %}
+        {% for miembro in docentes %}
+        <div class="card-perfil docente-border">
+            <div class="perfil-img" style="background-image: url('{{ miembro.foto }}')"></div>
+            <h3>{{ miembro.nombre }}</h3>
+            <p class="puesto">{{ miembro.puesto }}</p>
+            <div class="badge">Especialista</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h2 class="titulo-area">Personal de Apoyo</h2>
+    <div class="personal-grid">
+        {% assign apoyo = site.data.personal | where: "area", "Apoyo" %}
+        {% for miembro in apoyo %}
+        <div class="card-perfil card-small">
+            <h3>{{ miembro.nombre }}</h3>
+            <p class="puesto">{{ miembro.puesto }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
 </div>
