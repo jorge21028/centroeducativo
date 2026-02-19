@@ -1,0 +1,11 @@
+---
+layout: default
+title: Nuestro Personal
+---
+<h2>Equipo de Gestión</h2>
+<div class="grid-personal">
+  {% assign gestion = site.data.staff | where: "tipo", "Gestión" %}
+  {% for miembro in gestion %}
+    <div class="card"><h3>{{ miembro.nombre }}</h3><p>{{ miembro.cargo }}</p></div>
+  {% endfor %}
+</div>
