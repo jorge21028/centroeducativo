@@ -1,1 +1,11 @@
-f
+- nombre: "Ing. Carlos Martínez"
+  promocion: "2018"
+  logro: "Software Engineer en Google"
+  testimonio: "El centro me dio las bases lógicas para mi carrera."
+  foto: "https://i.pravatar.cc/150?u=carlos"
+
+- nombre: "Dra. Laura Peralta"
+  promocion: "2015"
+  logro: "Medicina Interna - HOMS"
+  testimonio: "Los valores éticos aprendidos aquí me guían cada día."
+  foto: "https://i.pravatar.cc/150?u=laura"
