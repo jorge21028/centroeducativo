@@ -121,3 +121,62 @@ body {
     transform: scale(1.03);
     cursor: pointer;
 }
+
+/* Estilos para Menú Móvil */
+.checkbtn {
+    font-size: 30px;
+    color: var(--primary);
+    cursor: pointer;
+    display: none;
+}
+#check { display: none; }
+
+@media (max-width: 952px) {
+    .checkbtn { display: block; }
+    .nav-links {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255,255,255,0.95);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    #check:checked ~ .nav-links { left: 0; }
+}
+
+/* Hero Section con gradiente innovador */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(0,56,118,0.9) 0%, rgba(213,43,30,0.4) 100%), 
+                url('https://images.unsplash.com/photo-1523050853063-9158946122a2?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-btns { margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; }
+.btn-primary { background: var(--accent); color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+.btn-secondary { border: 2px solid white; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; }
+
+/* Sección Valores */
+.valores-container {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 10%;
+    background: white;
+}
+.card-valor {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 4px solid var(--primary);
+}
+.card-valor i { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
