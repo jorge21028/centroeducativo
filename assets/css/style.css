@@ -239,3 +239,78 @@ body {
     text-align: center;
     margin: 40px 5%;
 }
+/* Estilos para Contacto */
+.contacto-header {
+    background: linear-gradient(var(--primary), #002650);
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.contacto-container {
+    padding: 0 5% 4rem 5%;
+    margin-top: -50px; /* Eleva las tarjetas sobre el header */
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.contacto-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--accent);
+    transition: 0.3s;
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px);
+}
+
+.contacto-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.btn-llamar {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--primary);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mapa */
+.mapa-wrapper {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.mapa-wrapper h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.mapa-frame {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid #ddd;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .contacto-container {
+        margin-top: 20px;
+    }
+}
