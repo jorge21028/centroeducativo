@@ -1,1 +1,46 @@
 
+---
+layout: default
+title: Inicio
+---
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Excelencia Educativa para el Futuro</h1>
+        <p>Formando los líderes técnicos y académicos de la República Dominicana.</p>
+        <div class="hero-btns">
+            <a href="/admision" class="btn-primary">Proceso de Admisión</a>
+            <a href="/oferta" class="btn-secondary">Nuestras Carreras</a>
+        </div>
+    </div>
+</section>
+
+<section class="valores-container">
+    <div class="card-valor">
+        <i class="fas fa-bullseye"></i>
+        <h3>Misión</h3>
+        <p>Brindar una formación integral de calidad, basada en valores éticos y excelencia académica.</p>
+    </div>
+    <div class="card-valor">
+        <i class="fas fa-eye"></i>
+        <h3>Visión</h3>
+        <p>Ser el centro educativo líder en innovación tecnológica y humana de la región.</p>
+    </div>
+</section>
+
+<section class="noticias-home">
+    <div class="section-title">
+        <h2>Noticias Recientes</h2>
+        <a href="/noticias">Ver todas</a>
+    </div>
+    <div class="modern-grid">
+        {% for post in site.posts limit:3 %}
+        <div class="card">
+            <small>{{ post.date | date: "%d/%m/%Y" }}</small>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+            <a href="{{ post.url | relative_url }}">Leer más</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
