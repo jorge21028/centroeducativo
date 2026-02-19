@@ -98,3 +98,26 @@ body {
 }
 
 .leer-mas:hover { text-decoration: underline; }
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.4s;
+    filter: grayscale(30%);
+}
+
+.grid-galeria img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    cursor: pointer;
+}
