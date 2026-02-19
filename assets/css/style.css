@@ -459,3 +459,23 @@ body {
     display: inline-block;
     margin-top: 10px;
 }
+/* Adaptación de círculos para iconos */
+.icon-circle, .icon-circle-accent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    color: var(--primary);
+}
+
+.icon-circle-accent {
+    color: var(--accent);
+    background: #fff5f5;
+}
+
+.card-egresado blockquote {
+    min-height: 80px; /* Para que todas las tarjetas tengan el mismo alto visual */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
