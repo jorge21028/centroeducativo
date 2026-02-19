@@ -10,19 +10,27 @@
 </head>
 <body>
 
-    <header>
-        <nav class="glass-nav">
-            <div class="logo">EDU<span>RD</span></div>
-            <ul class="nav-links">
-                <li><a href="{{ '/' | relative_url }}"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="{{ '/historia' | relative_url }}">Historia</a></li>
-                <li><a href="{{ '/oferta' | relative_url }}">Oferta</a></li>
-                <li><a href="{{ '/personal' | relative_url }}">Personal</a></li>
-                <li><a href="{{ '/noticias' | relative_url }}">Noticias</a></li>
-                <li><a href="{{ '/contactos' | relative_url }}" class="btn-cta">Admisiones</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="glass-nav">
+        <div class="logo">CENTRO<span>RD</span></div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        
+        <ul class="nav-links">
+            <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+            <li><a href="{{ '/historia' | relative_url }}">Historia</a></li>
+            <li><a href="{{ '/oferta' | relative_url }}">Oferta</a></li>
+            <li><a href="{{ '/ejes-transversales' | relative_url }}">Ejes</a></li>
+            <li><a href="{{ '/personal' | relative_url }}">Personal</a></li>
+            <li><a href="{{ '/egresados' | relative_url }}">Egresados</a></li>
+            <li><a href="{{ '/noticias' | relative_url }}">Noticias</a></li>
+            <li><a href="{{ '/galeria' | relative_url }}">Galería</a></li>
+            <li><a href="{{ '/contactos' | relative_url }}" class="btn-cta">Admisión</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         {{ content }}
