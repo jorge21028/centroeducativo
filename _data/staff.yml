@@ -1,0 +1,6 @@
+- nombre: "Juan Pérez"
+  cargo: "Director"
+  tipo: "Gestión"
+- nombre: "María Sosa"
+  cargo: "Docente de Informática"
+  tipo: "Docente"
