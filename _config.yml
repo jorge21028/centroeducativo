@@ -1,11 +1,7 @@
-title: Centro Educativo Secundario RD
-email: contacto@tu-escuela.edu.do
-description: Formando líderes con valores y tecnología.
-baseurl: "" 
-url: "https://tu-usuario.github.io"
+# Si su sitio es: https://jorgeabreu.github.io/centro-educativo/
+# baseurl debe ser "/centro-educativo"
+# Si es: https://jorgeabreu.github.io/
+# baseurl debe ser ""
 
-# Configuración de Colecciones para Personal
-collections:
-  personal:
-    output: true
-    permalink: /personal/:path/
+baseurl: "/centroeducativo" 
+url: "https://jorge21028.github.io"
