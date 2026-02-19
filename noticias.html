@@ -1,0 +1,30 @@
+---
+layout: default
+title: Noticias del Centro
+---
+
+<section class="contenedor-noticias">
+  <h1>Últimas Novedades del Centro</h1>
+
+  <div class="modern-grid">
+    {% comment %} 
+       Aquí inicia el bucle: "Por cada post en el sitio..." 
+    {% endcomment %}
+    
+    {% for post in site.posts %}
+      <article class="card">
+        <div class="card-header">
+           <span class="fecha">{{ post.date | date: "%d de %b, %Y" }}</span>
+        </div>
+        
+        <h3>{{ post.title }}</h3>
+        
+        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        
+        <a href="{{ post.url | relative_url }}" class="leer-mas">Leer noticia completa →</a>
+      </article>
+    {% endfor %}
+    
+    {% comment %} Aquí termina el bucle {% endcomment %}
+  </div>
+</section>
