@@ -3,31 +3,46 @@ layout: default
 title: Oferta Académica
 ---
 
-<section class="seccion-oferta">
-    <div class="header-oferta">
-        <h1>Nuestra Oferta Educativa</h1>
-        <p>Formación integral basada en el currículo dominicano por competencias.</p>
-    </div>
+<section class="egresados-hero">
+    <h1>Nuestra Oferta Educativa</h1>
+    <p>Formación técnica y académica de vanguardia bajo el currículo dominicano.</p>
+</section>
+
+<section class="contenedor-oferta">
     <div class="modern-grid">
-        <div class="card-oferta">
-            <div class="icono"><i class="fas fa-code"></i></div>
+                <div class="card-egresado">
+            <div class="foto-marco icon-circle">
+                <i class="fas fa-laptop-code fa-3x"></i>
+            </div>
             <h3>Técnico en Informática</h3>
-            <p>Especialización en desarrollo de software, bases de datos y soporte técnico.</p>
-            <ul>
-                <li>Diseño Web (HTML/CSS)</li>
-                <li>Programación en Python</li>
-                <li>Manejo de SQL</li>
-            </ul>
+            <span class="promocion">Área Tecnológica</span>
+            <p class="logro"><strong>Enfoque:</strong> Desarrollo de Software y BBDD</p>
+            <blockquote class="testimonio">
+                Especialización en lenguajes modernos, SQL y diseño de interfaces web innovadoras.
+            </blockquote>
         </div>
-        <div class="card-oferta">
-            <div class="icono"><i class="fas fa-briefcase"></i></div>
-            <h3>Técnico en Gestión Administrativa</h3>
-            <p>Formación en procesos contables, administrativos y servicio al cliente.</p>
+        <div class="card-egresado">
+            <div class="foto-marco icon-circle">
+                <i class="fas fa-chart-line fa-3x"></i>
+            </div>
+            <h3>Técnico en Gestión</h3>
+            <span class="promocion">Área Administrativa</span>
+            <p class="logro"><strong>Enfoque:</strong> Contabilidad y Procesos</p>
+            <blockquote class="testimonio">
+                Formación en administración empresarial, contabilidad computarizada y servicio al cliente.
+            </blockquote>
         </div>
-        <div class="card-oferta">
-            <div class="icono"><i class="fas fa-book"></i></div>
+        <div class="card-egresado">
+            <div class="foto-marco icon-circle">
+                <i class="fas fa-graduation-cap fa-3x"></i>
+            </div>
             <h3>Modalidad Académica</h3>
-            <p>Preparación robusta para el ingreso a la educación superior.</p>
+            <span class="promocion">Salida General</span>
+            <p class="logro"><strong>Enfoque:</strong> Ciencias y Humanidades</p>
+            <blockquote class="testimonio">
+                Preparación intensiva para el ingreso exitoso a las mejores universidades del país.
+            </blockquote>
         </div>
+
     </div>
 </section>
