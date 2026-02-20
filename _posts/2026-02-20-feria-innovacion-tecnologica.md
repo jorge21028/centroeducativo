@@ -7,7 +7,7 @@ image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format
 ---
 <section class="post-content-styled">
         <div class="card-egresado" style="padding: 0; overflow: hidden; margin-bottom: 30px;">
-        <img src="[http://googleusercontent.com/image_collection/image_retrieval/5713758409988076822_3](https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" alt="Feria Tecnológica" style="width: 100%; height: auto; display: block;">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Feria Tecnológica" style="width: 100%; height: auto; display: block;">
         <div style="padding: 20px; text-align: left;">
             <p class="logro"><strong>Evento Destacado</strong></p>
             <p>Nuestros estudiantes de secundaria demostrando su talento en el desarrollo de software y hardware.</p>
@@ -40,7 +40,7 @@ image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format
     </div>
     <div class="card-egresado" style="margin-bottom: 40px;">
         <div class="foto-marco-galeria" style="height: 350px;">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Estudiantes trabajando" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Estudiantes trabajando" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <p class="pie-foto">Estudiantes de informática colaborando en la resolución de problemas lógicos durante la feria.</p>
     </div>
