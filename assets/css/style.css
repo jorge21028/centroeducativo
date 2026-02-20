@@ -522,3 +522,43 @@ body {
     font-size: 0.95rem;
     margin: 10px 0;
 }
+
+/* Estilos para Admisión */
+.contenedor-admision {
+    padding: 40px 5%;
+    background: #fdfdfd;
+}
+
+.requisitos-section {
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.lista-requisitos {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.lista-requisitos li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+    display: flex;
+    align-items: center;
+    color: #444;
+}
+
+.lista-requisitos li i {
+    color: var(--accent);
+    margin-right: 15px;
+    width: 20px;
+}
+
+/* Efecto para el icono del paso actual */
+.icon-circle i {
+    transition: transform 0.3s ease;
+}
+
+.card-egresado:hover .icon-circle i {
+    transform: rotate(10deg) scale(1.1);
+}
