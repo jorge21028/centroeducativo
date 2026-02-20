@@ -562,3 +562,75 @@ body {
 .card-egresado:hover .icon-circle i {
     transform: rotate(10deg) scale(1.1);
 }
+/* Estilos para que la noticia sea "Pro" */
+.post-intro .lead {
+    font-size: 1.25rem;
+    color: var(--primary);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--accent), transparent);
+    margin: 2rem 0;
+}
+
+.highlight-box {
+    background: #f8f9fa;
+    border-left: 5px solid var(--primary);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+}
+
+.highlight-box i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.1;
+    font-size: 2rem;
+}
+
+.highlight-box blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.highlight-box cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--accent);
+    font-style: normal;
+}
+
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.styled-list li::before {
+    content: "✓";
+    color: var(--accent);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.post-footer-call {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
