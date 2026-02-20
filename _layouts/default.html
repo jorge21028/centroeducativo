@@ -16,18 +16,18 @@
 <body>
 
 <header>
-    <nav class="glass-nav">
-        <div class="logo">
-            <a href="{{ '/' | relative_url }}" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
-             <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo" width="600" height="600" class="logo-img">
-             <div class="logo-text">CENTRO<span> EDUCATIVO </span>RD</div>
-            </a>
-        </div>
-        
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+<nav class="glass-nav">
+    <div class="logo">
+        <a href="{{ '/' | relative_url }}" class="nav-brand-link">
+            <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo" class="nav-logo-custom">
+            <div class="logo-text">CENTRO<span> EDUCATIVO </span>RD</div>
+        </a>
+    </div>
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
         
         <ul class="nav-links">
             <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
