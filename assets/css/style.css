@@ -660,7 +660,7 @@ body {
 
 /* El Logo: Ajustado para que se visualice mejor */
 .nav-logo-custom {
-    height: 150px !important; /* Aumentamos el tamaño para mejor visualización */
+    height: 90px !important; /* Aumentamos el tamaño para mejor visualización */
     width: auto !important;
     object-fit: contain;
     /* Sombra suave para darle relieve al logo */
