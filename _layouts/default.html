@@ -48,14 +48,25 @@
         {{ content }}
     </main>
 
-    <footer class="footer-moderno">
-        <p>&copy; 2026 Centro Educativo Secundario - República Dominicana- Jorge Luis Abreu</p>
-        <div class="socials">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>           
+<footer class="footer-moderno">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo Centro Educativo" class="footer-logo-img">
+            <p class="footer-brand-name">CENTRO <span>EDUCATIVO</span> RD</p>
         </div>
-    </footer>
+
+        <p class="copyright">
+            &copy; 2026 Centro Educativo Secundario - República Dominicana <br>
+            <small>Desarrollado por Ing. Jorge Luis Abreu</small>
+        </p>
+
+        <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>            
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
