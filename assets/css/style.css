@@ -634,3 +634,18 @@ body {
     text-align: center;
     margin-top: 40px;
 }
+
+.logo-img {
+    height: 45px;      /* Este es el tamaño estándar para una barra glass-nav */
+    width: auto;       /* Mantiene la proporción */
+    margin-right: 10px; /* Separa el logo del texto "CENTRO" */
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* Ajuste para que en iPhone no se vea amontonado */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 35px;  /* Un poco más pequeño en móviles */
+    }
+}
