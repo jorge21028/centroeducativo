@@ -649,3 +649,46 @@ body {
         height: 35px;  /* Un poco más pequeño en móviles */
     }
 }
+
+/* Contenedor del enlace para alineación perfecta */
+.nav-brand-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Centrado vertical absoluto */
+    gap: 15px;           /* Espacio entre logo y texto */
+}
+
+/* El Logo: Ajustado para que se visualice mejor */
+.nav-logo-custom {
+    height: 70px !important; /* Aumentamos el tamaño para mejor visualización */
+    width: auto !important;
+    object-fit: contain;
+    /* Sombra suave para darle relieve al logo */
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+
+.nav-logo-custom:hover {
+    transform: scale(1.05); /* Efecto interactivo al pasar el mouse */
+}
+
+/* El Texto: Centrado y con jerarquía */
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1; /* Evita que el texto se desfase hacia arriba o abajo */
+    display: flex;
+    flex-direction: column; /* Opcional: pone "EDUCATIVO RD" debajo de "CENTRO" si el logo es muy alto */
+    justify-content: center;
+}
+
+/* Ajuste para móviles (iPhone) */
+@media (max-width: 768px) {
+    .nav-logo-custom {
+        height: 50px !important; /* Un poco más pequeño en móviles para no ocupar toda la pantalla */
+    }
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
