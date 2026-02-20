@@ -17,7 +17,14 @@
 
 <header>
     <nav class="glass-nav">
-        <div class="logo">CENTRO<span> EDUCATIVO </span>RD</div>
+        <div class="logo">
+            <a href="{{ '/' | relative_url }}" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo" class="logo-img">
+                
+                <div class="logo-text">CENTRO<span> EDUCATIVO </span>RD</div>
+            </a>
+        </div>
+        
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
