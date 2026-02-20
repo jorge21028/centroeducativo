@@ -5,15 +5,6 @@ date: 2026-02-20
 categories: eventos
 image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
 ---
-
----
-layout: post
-title: "Éxito total en la Feria de Innovación Tecnológica 2026"
-date: 2026-02-20
-categories: eventos
-image: "http://googleusercontent.com/image_collection/image_retrieval/5713758409988076822_3"
----
-
 <section class="post-content-styled">
         <div class="card-egresado" style="padding: 0; overflow: hidden; margin-bottom: 30px;">
         <img src="http://googleusercontent.com/image_collection/image_retrieval/5713758409988076822_3" alt="Feria Tecnológica" style="width: 100%; height: auto; display: block;">
