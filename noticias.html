@@ -37,3 +37,23 @@ title: Noticias del Centro
     {% comment %} Aquí termina el bucle {% endcomment %}
   </div>
 </section>
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: "{{ '/search.json' | relative_url }}",
+    searchResultTemplate: `
+      <li style="padding: 15px; border-bottom: 1px solid #eee;">
+        <a href="{url}" style="text-decoration: none; display: block;">
+          <span style="color: var(--primary); font-weight: bold; font-size: 1.1rem;">{title}</span><br>
+          <small style="color: var(--accent);">{date}</small>
+        </a>
+      </li>
+    `,
+    noResultsText: '<li style="padding: 15px; color: #666;">No se encontraron resultados que coincidan.</li>',
+    limit: 5,
+    fuzzy: false
+  });
+</script>
