@@ -67,5 +67,27 @@
     </div>
 </footer>
 
+    <div id="imageModal" class="modal-visor" onclick="this.style.display='none'">
+    <span class="close-visor">&times;</span>
+    <img class="modal-content-img" id="imgFull">
+    <div id="caption-visor"></div>
+</div>
+
+<script>
+    // Esta función se encarga de capturar el clic en las imágenes generadas por el YML
+    document.addEventListener('click', function (e) {
+        if (e.target.closest('.card-foto img')) {
+            const image = e.target;
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("imgFull");
+            const captionText = document.getElementById("caption-visor");
+
+            modal.style.display = "block";
+            modalImg.src = image.src;
+            captionText.innerHTML = image.alt || "Galería Institucional";
+        }
+    });
+</script>
+
 </body>
 </html>
