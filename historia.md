@@ -15,6 +15,7 @@ title: Nuestra Historia
             <div class="timeline-dot"></div>
             <div class="timeline-date">{{ hito.año }}</div>
             <div class="timeline-content">
+                <h3>{{ hito.año }}</h3>
                 <h3>{{ hito.titulo }}</h3>
                 <p>{{ hito.descripcion }}</p>
             </div>
