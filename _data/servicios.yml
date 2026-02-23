@@ -1,0 +1,31 @@
+- titulo: "Laboratorios de Informática"
+  icono: "fa-laptop-code"
+  descripcion: "Espacios modernos para el aprendizaje de diseño web, bases de datos y programación."
+  puntos:
+    - "Entornos SQL y Visual Studio Code"
+    - "Redes de alta velocidad"
+    - "Soporte para Multimedia"
+
+- titulo: "Biblioteca y Recursos"
+  icono: "fa-book-open"
+  descripcion: "Un entorno diseñado para la investigación, con acceso a bibliografía física y digital."
+  puntos:
+    - "Catálogo digitalizado"
+    - "Áreas de estudio grupal"
+    - "Préstamo de dispositivos"
+
+- titulo: "Orientación Académica"
+  icono: "fa-user-graduate"
+  descripcion: "Acompañamiento profesional para el desarrollo personal y la elección de carrera."
+  puntos:
+    - "Pruebas vocacionales"
+    - "Apoyo psicopedagógico"
+    - "Talleres de liderazgo"
+
+- titulo: "Deportes y Recreación"
+  icono: "fa-volleyball"
+  descripcion: "Fomentamos la salud física y el trabajo en equipo mediante diversas disciplinas."
+  puntos:
+    - "Canchas multiuso"
+    - "Entrenadores calificados"
+    - "Torneos intercolegiales"
