@@ -930,3 +930,54 @@ body {
 #results-container li:hover {
     background-color: #f9f9f9;
 }
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.whatsapp-btn i {
+    font-size: 1.8rem;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+    color: white;
+}
+
+/* Ocultar texto en pantallas muy pequeñas para que no estorbe */
+@media (max-width: 480px) {
+    .whatsapp-text {
+        display: none;
+    }
+    .whatsapp-btn {
+        padding: 15px;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Animación de pulso suave */
+@keyframes pulse-whatsapp {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-btn {
+    animation: pulse-whatsapp 2s infinite;
+}
