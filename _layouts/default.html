@@ -32,15 +32,17 @@
 <ul class="nav-links">
     <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
     
-    <li class="dropdown">
-        <a href="#" class="dropbtn">Sobre Nosotros <i class="fas fa-caret-down"></i></a>
-        <ul class="dropdown-content">
-            <li><a href="{{ '/historia' | relative_url }}">Historia</a></li>
-            <li><a href="{{ '/ejes-transversales' | relative_url }}">Ejes</a></li>
-            <li><a href="{{ '/personal' | relative_url }}">Personal</a></li>
-            <li><a href="{{ '/egresados' | relative_url }}">Egresados</a></li>
-        </ul>
-    </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(event)">
+        Sobre Nosotros <i class="fas fa-caret-down"></i>
+    </a>
+    <ul class="dropdown-content" id="myDropdown">
+        <li><a href="{{ '/historia' | relative_url }}">Historia</a></li>
+        <li><a href="{{ '/ejes-transversales' | relative_url }}">Ejes</a></li>
+        <li><a href="{{ '/personal' | relative_url }}">Personal</a></li>
+        <li><a href="{{ '/egresados' | relative_url }}">Egresados</a></li>
+    </ul>
+</li>
         <li class="dropdown">
         <a href="#" class="dropbtn">admisión <i class="fas fa-caret-down"></i></a>
         <ul class="dropdown-content">
@@ -100,6 +102,30 @@
             captionText.innerHTML = image.alt || "Galería Institucional";
         }
     });
+
+function toggleDropdown(event) {
+    // Evita que el enlace recargue la página
+    event.preventDefault();
+    event.stopPropagation();
+    
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("show");
+}
+
+// Cerrar el submenú si el usuario hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+    
 </script>
 
 </body>
