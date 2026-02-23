@@ -1,8 +1,11 @@
-- seccion: "Vida Estudiantil y Eventos"
+- seccion: "Vida Estudiantil"
   fotos:
     - url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
       titulo: "Taller de Programación"
       alt: "Estudiantes en el laboratorio de informática"
+
+- seccion: "Eventos"
+  fotos:
     - url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80"
       titulo: "Torneo Recreativo 2025"
       alt: "Competencia deportiva estudiantil"
