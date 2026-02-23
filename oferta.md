@@ -4,7 +4,7 @@ title: Nuestra Oferta Académica
 ---
 
 <section class="egresados-hero">
-    <h1>Propuesta Educativa Politécnico</h1>
+    <h1>Propuesta Educativa</h1>
     <p>Formación técnica y académica con estándares de excelencia para el siglo XXI.</p>
 </section>
 
