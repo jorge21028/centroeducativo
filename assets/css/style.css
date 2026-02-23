@@ -908,3 +908,17 @@ body {
     background-color: var(--primary);
     color: white !important;
 }
+
+.form-group input:focus, 
+.form-group textarea:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.1);
+}
+
+@media (max-width: 600px) {
+    #form-admision div {
+        grid-template-columns: 1fr !important; /* Una sola columna en móvil */
+    }
+}
