@@ -1,7 +1,7 @@
 /* Variables de Diseño */
 :root {
     --primary: #003876;
-    --accent: #14572D;
+    --accent: #d52b1e;
     --glass: rgba(255, 255, 255, 0.8);
     --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
@@ -11,7 +11,7 @@
 body { 
     font-family: 'Inter', sans-serif; 
     background-color: #f8f9fa; 
-    color: #14572D;
+    color: #333;
 }
 
 /* Navegación Glassmorphism */
