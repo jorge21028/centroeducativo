@@ -15,7 +15,6 @@ title: Nuestra Historia
             <div class="timeline-dot"></div>
             <div class="timeline-date">{{ hito.anio }}</div>
             <div class="timeline-content">
-                <h3>{{ hito.anio }}</h3>
                 <h3>{{ hito.titulo }}</h3>
                 <p>{{ hito.descripcion }}</p>
             </div>
