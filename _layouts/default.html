@@ -58,11 +58,6 @@
     <li><a href="{{ '/noticias' | relative_url }}">Noticias</a></li>
     <li><a href="{{ '/galeria' | relative_url }}">Galería</a></li>
     <li><a href="{{ '/contactos' | relative_url }}" class="btn-cta">Contactos</a></li>
-    <li class="nav-item-toggle">
-    <button id="dark-mode-toggle" class="theme-btn" title="Cambiar modo" style="background: none; border: 1.5px solid var(--primary); color: var(--primary); padding: 5px 12px; border-radius: 20px; cursor: pointer; transition: 0.3s;">
-        <i class="fas fa-moon" id="theme-icon"></i>
-    </button>
-</li>
 </ul>
     </nav>
 
@@ -198,37 +193,7 @@ window.onclick = function(event) {
         }
     };
     // Cargar modo oscuro   
-        document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('dark-mode-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const body = document.body;
-
-    // 1. Verificar preferencia guardada al cargar la página
-    const currentTheme = localStorage.getItem('theme');
-    
-    if (currentTheme === 'dark') {
-        body.classList.add('dark-mode');
-        if (themeIcon) themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-
-    // 2. Evento de clic para alternar el modo
-    btn.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        
-        let theme = 'light';
-        
-        if (body.classList.contains('dark-mode')) {
-            theme = 'dark';
-            if (themeIcon) themeIcon.classList.replace('fa-moon', 'fa-sun');
-        } else {
-            theme = 'light';
-            if (themeIcon) themeIcon.classList.replace('fa-sun', 'fa-moon');
-        }
-        
-        // Guardar la elección del usuario
-        localStorage.setItem('theme', theme);
-    });
-});
+     
 </script>
 </body>
 </html>
