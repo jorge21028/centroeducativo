@@ -1,36 +1,17 @@
 /* Variables de Diseño */
-/* Variables de Diseño - Soporte Modo Oscuro */
 :root {
     --primary: #003876;
     --accent: #d52b1e;
-    --bg-body: #f8f9fa;
-    --bg-card: #ffffff;
-    --text-main: #333333;
-    --text-muted: #666666;
     --glass: rgba(255, 255, 255, 0.8);
     --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    --border-color: #eeeeee;
-}
-
-/* Colores para Modo Oscuro */
-body.dark-mode {
-    --bg-body: #121212;
-    --bg-card: #1e1e1e;
-    --text-main: #e0e0e0;
-    --text-muted: #b0b0b0;
-    --glass: rgba(30, 30, 30, 0.8);
-    --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-    --border-color: #333333;
-    --primary: #4a9eff; /* Un azul más claro para mejor contraste en fondo negro */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { 
     font-family: 'Inter', sans-serif; 
-    background-color: var(--bg-body); 
-    color: var(--text-main);
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    background-color: #f8f9fa; 
+    color: #333;
 }
 
 /* Navegación Glassmorphism */
@@ -79,9 +60,12 @@ body {
 }
 
 .card {
-background: var(--bg-card);
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
 }
 
 .card:hover { transform: translateY(-10px); }
@@ -207,9 +191,13 @@ background: var(--bg-card);
 }
 
 .card-egresado {
-background: var(--bg-card);
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 1px solid #f0f0f0;
 }
 
 .card-egresado:hover {
@@ -241,7 +229,6 @@ background: var(--bg-card);
     font-size: 0.9rem;
     border-top: 1px solid #eee;
     padding-top: 15px;
-    color: var(--text-muted);
 }
 
 .glass-card {
@@ -273,9 +260,13 @@ background: var(--bg-card);
 }
 
 .contacto-card {
-background: var(--bg-card);
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--accent);
+    transition: 0.3s;
 }
 
 .contacto-card:hover {
@@ -385,9 +376,11 @@ background: var(--bg-card);
 }
 
 .timeline-content {
-background: var(--bg-card);
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 /* Desktop: Alternar lados si lo desea */
@@ -424,9 +417,14 @@ background: var(--bg-card);
 }
 
 .card-perfil {
-background: var(--bg-card);
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-perfil:hover {
@@ -982,15 +980,4 @@ background: var(--bg-card);
 
 .whatsapp-btn {
     animation: pulse-whatsapp 2s infinite;
-}
-
-/* Ajuste para el botón de cambio de tema en modo oscuro */
-body.dark-mode .theme-btn {
-    border-color: var(--primary) !important;
-    color: var(--primary) !important;
-}
-
-body.dark-mode .theme-btn:hover {
-    background: var(--primary);
-    color: #121212 !important; /* Contraste para el fondo oscuro */
 }
