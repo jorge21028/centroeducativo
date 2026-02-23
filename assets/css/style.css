@@ -877,3 +877,18 @@ body {
         display: block;
     }
 }
+.mapa-frame {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    position: relative;
+    height: 0;
+    border-radius: 15px;
+}
+
+.mapa-frame iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
