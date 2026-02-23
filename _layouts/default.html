@@ -119,7 +119,29 @@ window.onclick = function(event) {
         }
     }
 }
+function toggleDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var el = document.getElementById("myDropdown");
+    if (el.classList.contains("show")) {
+        el.classList.remove("show");
+    } else {
+        el.classList.add("show");
+    }
+}
 
+// Cerrar si se toca fuera
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
     
 </script>
 
