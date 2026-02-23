@@ -1,0 +1,23 @@
+- categoria: "Documentos Básicos"
+  icono: "fa-file-invoice"
+  items:
+    - "Acta de Nacimiento original y certificada."
+    - "Certificado médico vigente (sellado por centro de salud)."
+    - "6 fotos 2x2 (frente, tipo carnet)."
+    - "Copia de la cédula de los padres o tutores."
+
+- categoria: "Expediente Académico"
+  icono: "fa-graduation-cap"
+  items:
+    - "Certificado de 6to de Primaria (si aplica)."
+    - "Récord de calificaciones de años anteriores."
+    - "Carta de buena conducta del centro de procedencia."
+    - "Certificación de culminación de nivel."
+
+- categoria: "Proceso de Ingreso"
+  icono: "fa-clipboard-check"
+  items:
+    - "Completar el formulario de solicitud de admisión."
+    - "Asistir a la entrevista con el departamento de psicología."
+    - "Evaluación diagnóstica de competencias (Lengua Española y Matemáticas)."
+    - "Pago de la cuota de inscripción y materiales."
