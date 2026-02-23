@@ -824,3 +824,18 @@ body {
 .has-submenu:hover .submenu {
     display: block;
 }
+@media (max-width: 952px) {
+    .dropdown-content {
+        position: static;
+        display: block; /* En móvil es mejor que se vean siempre o usar JS */
+        background: transparent;
+        box-shadow: none;
+        padding-left: 20px;
+        backdrop-filter: none;
+    }
+    
+    .dropdown-content li a {
+        text-align: left;
+        border-bottom: none;
+    }
+}
