@@ -793,3 +793,34 @@ body {
 .has-submenu:hover .submenu {
     display: block;
 }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
