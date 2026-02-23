@@ -763,3 +763,33 @@ body {
     transform: translateY(-8px);
     box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.08);
 }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    min-width: 180px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
