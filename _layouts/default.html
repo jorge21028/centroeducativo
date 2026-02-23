@@ -32,11 +32,11 @@
 <ul class="nav-links">
     <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
     
-    <li class="nav-item dropdown">
-        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(event)">
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">
             Sobre Nosotros <i class="fas fa-caret-down"></i>
         </a>
-        <ul class="dropdown-content" id="myDropdown">
+        <ul class="dropdown-content">
             <li><a href="{{ '/historia' | relative_url }}">Historia</a></li>
             <li><a href="{{ '/ejes-transversales' | relative_url }}">Ejes</a></li>
             <li><a href="{{ '/personal' | relative_url }}">Personal</a></li>
@@ -44,16 +44,15 @@
         </ul>
     </li>
 
-        <li class="nav-item dropdown">
-        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(event)">
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">
             Admisión <i class="fas fa-caret-down"></i>
         </a>
-        <ul class="dropdown-content" id="myDropdown">
+        <ul class="dropdown-content">
             <li><a href="{{ '/oferta' | relative_url }}">Oferta</a></li>
-            <li><a href="{{ '/requisitos' | relative_url }}">Requisitos de Admisión</a></li>
+            <li><a href="{{ '/requisitos' | relative_url }}">Requisitos Admisión</a></li>
         </ul>
     </li>
-
 
     <li><a href="{{ '/servicios' | relative_url }}">Servicios</a></li>
     <li><a href="{{ '/noticias' | relative_url }}">Noticias</a></li>
@@ -129,26 +128,26 @@ window.onclick = function(event) {
         }
     }
 }
-function toggleDropdown(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    var el = document.getElementById("myDropdown");
-    if (el.classList.contains("show")) {
-        el.classList.remove("show");
-    } else {
-        el.classList.add("show");
+function toggleDropdown(elemento) {
+    // Cerramos cualquier otro submenú que esté abierto para evitar solapamientos
+    var todosLosMenus = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < todosLosMenus.length; i++) {
+        if (todosLosMenus[i] !== elemento.nextElementSibling) {
+            todosLosMenus[i].classList.remove("show");
+        }
     }
+
+    // Activamos solo el submenú que pertenece al botón que tocamos
+    var subMenu = elemento.nextElementSibling;
+    subMenu.classList.toggle("show");
 }
 
-// Cerrar si se toca fuera
+// Cerrar todo si se toca fuera de los menús
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+            dropdowns[i].classList.remove('show');
         }
     }
 }
