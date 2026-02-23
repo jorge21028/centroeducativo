@@ -892,3 +892,19 @@ body {
     width: 100%;
     position: absolute;
 }
+/* Animación para la página 404 */
+.error-container .card {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Ajuste para el botón secundario de la 404 */
+.error-container a:hover {
+    background-color: var(--primary);
+    color: white !important;
+}
