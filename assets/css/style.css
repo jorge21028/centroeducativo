@@ -983,3 +983,14 @@ background: var(--bg-card);
 .whatsapp-btn {
     animation: pulse-whatsapp 2s infinite;
 }
+
+/* Ajuste para el botón de cambio de tema en modo oscuro */
+body.dark-mode .theme-btn {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+body.dark-mode .theme-btn:hover {
+    background: var(--primary);
+    color: #121212 !important; /* Contraste para el fondo oscuro */
+}
