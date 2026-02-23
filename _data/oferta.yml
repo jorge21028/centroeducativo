@@ -1,0 +1,24 @@
+- nivel: "Nivel Secundario (Primer Ciclo)"
+  descripcion: "Formación integral enfocada en el desarrollo de competencias fundamentales y valores."
+  icon: "fa-school"
+  detalles:
+    - "1ero, 2do y 3ero de Secundaria"
+    - "Reforzamiento en Matemáticas y Lengua Española"
+    - "Iniciación a la tecnología educativa"
+
+- nivel: "Bachillerato Técnico en Informática"
+  descripcion: "Especialización en el desarrollo de software, gestión de datos y recursos multimedia."
+  icon: "fa-code"
+  detalles:
+    - "Diseño y Desarrollo de Base de Datos (SQL)"
+    - "Programación y Desarrollo Web (HTML/CSS/JS)"
+    - "Recursos Multimedia y Diseño Gráfico"
+    - "Pruebas de Software y Aseguramiento de Calidad"
+
+- nivel: "Bachillerato Técnico en Gestión"
+  descripcion: "Preparación técnica para la administración eficiente de procesos empresariales."
+  icon: "fa-chart-line"
+  detalles:
+    - "Contabilidad y Finanzas"
+    - "Gestión Administrativa"
+    - "Ofimática avanzada"
