@@ -1,0 +1,20 @@
+- seccion: "Vida Estudiantil y Eventos"
+  fotos:
+    - url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+      titulo: "Taller de Programación"
+      alt: "Estudiantes en el laboratorio de informática"
+    - url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80"
+      titulo: "Torneo Recreativo 2025"
+      alt: "Competencia deportiva estudiantil"
+    - url: "https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?q=80&w=870&auto=format&fit=crop&q=80"
+      titulo: "Acto de Graduación"
+      alt: "Ceremonia de graduación"
+
+- seccion: "Nuestras Instalaciones"
+  fotos:
+    - url: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
+      titulo: "Edificio Principal"
+      alt: "Fachada del centro educativo"
+    - url: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?q=80&w=869&auto=format&fit=crop&q=80"
+      titulo: "Laboratorio de Ciencias"
+      alt: "Interior del laboratorio"
