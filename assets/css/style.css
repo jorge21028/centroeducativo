@@ -803,68 +803,53 @@ body {
     position: relative;
 }
 
-.submenu {
-    display: none;
+/* 1. ESTADO INICIAL: OCULTO (PC y Móvil) */
+.nav-links .dropdown-content {
+    display: none !important; /* Fuerza el cierre */
     position: absolute;
     top: 100%;
     left: 0;
     background: white;
     list-style: none;
-    padding: 0;
-    min-width: 180px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1000;
 }
 
-.submenu li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
+/* 2. COMPORTAMIENTO EN PC (Hover) */
+@media (min-width: 953px) {
+    .nav-links li.dropdown:hover .dropdown-content {
+        display: block !important;
+        animation: fadeIn 0.3s ease;
+    }
 }
 
-.has-submenu:hover .submenu {
-    display: block;
-}
-@media (max-width: 952px) {
-    .dropdown-content {
-        position: static;
-        display: block; /* En móvil es mejor que se vean siempre o usar JS */
-        background: transparent;
-        box-shadow: none;
-        padding-left: 20px;
-        backdrop-filter: none;
-    }
-    
-    .dropdown-content li a {
-        text-align: left;
-        border-bottom: none;
-    }
-}
-/* Clase que activa el JS */
-.dropdown-content.show {
+/* 3. COMPORTAMIENTO EN MÓVIL (Al tocar/clic) */
+.nav-links .dropdown-content.show {
     display: block !important;
-    opacity: 1;
-    visibility: visible;
 }
 
-/* Ajuste específico para el menú móvil (max-width: 952px) */
+/* 4. AJUSTES ESPECÍFICOS PARA MÓVIL (iPhone) */
 @media (max-width: 952px) {
     .nav-links li.dropdown .dropdown-content {
-        position: static; /* En móvil, que fluya con el resto del menú */
+        position: static; /* Empuja el menú hacia abajo en lugar de flotar */
         width: 100%;
-        background: rgba(0, 56, 118, 0.05); /* Un tono suave para diferenciarlo */
+        background: rgba(0, 0, 0, 0.05); /* Fondo sutil para diferenciarlo */
         box-shadow: none;
-        border-radius: 0;
-        padding-left: 20px; /* Indentación para que se note que es submenú */
-    }
-    
-    .nav-links li.dropdown .dropdown-content li a {
-        text-align: center;
-        padding: 15px;
-        font-size: 1.1rem;
+        padding-left: 20px;
     }
 
-    /* Rotar la flecha cuando esté abierto */
-    .dropdown-content.show ~ .dropbtn i {
-        transform: rotate(180deg);
+    .nav-links li.dropdown .dropdown-content li a {
+        color: var(--primary) !important;
+        text-align: left;
+        padding: 12px;
     }
+}
+
+/* Animación opcional */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
