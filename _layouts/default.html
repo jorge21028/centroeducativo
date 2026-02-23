@@ -29,17 +29,25 @@
         <i class="fas fa-bars"></i>
     </label>
         
-        <ul class="nav-links">
-            <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+<ul class="nav-links">
+    <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+    
+    <li class="dropdown">
+        <a href="#" class="dropbtn">Sobre Nosotros <i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-content">
             <li><a href="{{ '/historia' | relative_url }}">Historia</a></li>
-            <li><a href="{{ '/oferta' | relative_url }}">Oferta</a></li>
             <li><a href="{{ '/ejes-transversales' | relative_url }}">Ejes</a></li>
             <li><a href="{{ '/personal' | relative_url }}">Personal</a></li>
             <li><a href="{{ '/egresados' | relative_url }}">Egresados</a></li>
-            <li><a href="{{ '/noticias' | relative_url }}">Noticias</a></li>
-            <li><a href="{{ '/galeria' | relative_url }}">Galería</a></li>
-            <li><a href="{{ '/contactos' | relative_url }}" class="btn-cta">Contactos</a></li>
         </ul>
+    </li>
+
+    <li><a href="{{ '/oferta' | relative_url }}">Oferta</a></li>
+    <li><a href="{{ '/servicios' | relative_url }}">Servicios</a></li>
+    <li><a href="{{ '/noticias' | relative_url }}">Noticias</a></li>
+    <li><a href="{{ '/galeria' | relative_url }}">Galería</a></li>
+    <li><a href="{{ '/contactos' | relative_url }}" class="btn-cta">Contactos</a></li>
+</ul>
     </nav>
 </header>
 
