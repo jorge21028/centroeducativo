@@ -60,6 +60,25 @@
     <li><a href="{{ '/contactos' | relative_url }}" class="btn-cta">Contactos</a></li>
 </ul>
     </nav>
+    <li class="nav-item-toggle">
+    <button id="theme-toggle" class="theme-btn" title="Cambiar modo">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+</li>
+
+<style>
+.theme-btn {
+    background: none;
+    border: 1.5px solid var(--primary);
+    color: var(--primary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.theme-btn:hover { background: var(--primary); color: white; }
+[data-theme="dark"] .theme-btn { border-color: var(--accent); color: var(--accent); }
+</style>
 </header>
 
     <main>
@@ -167,5 +186,30 @@ window.onclick = function(event) {
     <i class="fab fa-whatsapp"></i>
     <span class="whatsapp-text">¿Dudas? Escríbenos</span>
 </a>
+    <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const htmlElement = document.documentElement;
+
+    // Cargar preferencia guardada
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggle.onclick = () => {
+        const isDark = htmlElement.hasAttribute('data-theme');
+        if (isDark) {
+            htmlElement.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+        } else {
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+    };
+</script>
 </body>
 </html>
