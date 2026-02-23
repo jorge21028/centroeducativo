@@ -32,16 +32,7 @@ title: Contacto y Ubicación
             {% endfor %}
         </div>
     </div>
-    <div id="mapa" class="mapa-wrapper">
-        <h2>Nuestra Ubicación</h2>
-        <div class="mapa-frame">
-            <iframe 
-                src="{{ site.data.contacto.direccion.mapa_url }}" 
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-    </div>
-    <section class="formulario-seccion" style="padding: 50px 20px;">
+        <section class="formulario-seccion" style="padding: 50px 20px;">
     <div class="card" style="max-width: 800px; margin: 0 auto; padding: 40px; border-radius: 20px; background: white; box-shadow: var(--shadow);">
         <h2 style="color: var(--primary); text-align: center; margin-bottom: 30px;">Envíenos un mensaje</h2>
                 <form action="https://formspree.io/f/tu-id-aqui" method="POST" id="form-admision">
@@ -77,4 +68,13 @@ title: Contacto y Ubicación
         </form>
     </div>
 </section>
+    <div id="mapa" class="mapa-wrapper">
+        <h2>Nuestra Ubicación</h2>
+        <div class="mapa-frame">
+            <iframe 
+                src="{{ site.data.contacto.direccion.mapa_url }}" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
 </section>
