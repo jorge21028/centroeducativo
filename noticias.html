@@ -2,6 +2,15 @@
 layout: default
 title: Noticias del Centro
 ---
+<div class="search-container" style="margin-bottom: 40px;">
+    <div style="position: relative; max-width: 600px; margin: 0 auto;">
+        <i class="fas fa-search" style="position: absolute; left: 15px; top: 15px; color: var(--accent);"></i>
+        <input type="text" id="search-input" placeholder="Buscar noticias, eventos, tecnología..." 
+               style="width: 100%; padding: 12px 20px 12px 45px; border-radius: 50px; border: 2px solid #eee; font-size: 1rem; outline: none; transition: 0.3s;">
+    </div>
+    
+    <ul id="results-container" style="list-style: none; padding: 0; max-width: 600px; margin: 10px auto; background: white; border-radius: 10px; box-shadow: var(--shadow);"></ul>
+</div>
 
 <section class="contenedor-noticias">
   <h1>Últimas Novedades del Centro</h1>
