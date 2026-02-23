@@ -193,36 +193,6 @@ window.onclick = function(event) {
         }
     };
     // Cargar modo oscuro   
-const btn = document.getElementById('dark-mode-toggle');
-const themeIcon = document.getElementById('theme-icon');
-const currentTheme = localStorage.getItem('theme');
-
-// 1. Al cargar la página: Aplicar el tema guardado
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    // Cambiar el icono si es modo oscuro
-    if (currentTheme === 'dark' && themeIcon) {
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-}
-
-// 2. Evento de clic para alternar
-btn.addEventListener('click', () => {
-    let theme = document.documentElement.getAttribute('data-theme');
-    
-    if (theme === 'dark') {
-        theme = 'light';
-        if (themeIcon) themeIcon.classList.replace('fa-sun', 'fa-moon');
-    } else {
-        theme = 'dark';
-        if (themeIcon) themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-
-    // Aplicar el atributo que su CSS ya tiene definido
-    document.documentElement.setAttribute('data-theme', theme);
-    // Guardar en el navegador para futuras visitas
-    localStorage.setItem('theme', theme);
-});
         
 </script>
 </body>
