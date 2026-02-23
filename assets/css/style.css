@@ -922,3 +922,11 @@ body {
         grid-template-columns: 1fr !important; /* Una sola columna en móvil */
     }
 }
+#search-input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.1);
+}
+
+#results-container li:hover {
+    background-color: #f9f9f9;
+}
