@@ -41,4 +41,40 @@ title: Contacto y Ubicación
             </iframe>
         </div>
     </div>
+    <section class="formulario-seccion" style="padding: 50px 20px;">
+    <div class="card" style="max-width: 800px; margin: 0 auto; padding: 40px; border-radius: 20px; background: white; box-shadow: var(--shadow);">
+        <h2 style="color: var(--primary); text-align: center; margin-bottom: 30px;">Envíenos un mensaje</h2>
+                <form action="https://formspree.io/f/tu-id-aqui" method="POST" id="form-admision">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                <div class="form-group">
+                    <label style="display: block; margin-bottom: 8px; font-weight: bold;">Nombre del Padre/Tutor</label>
+                    <input type="text" name="nombre" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;" placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label style="display: block; margin-bottom: 8px; font-weight: bold;">Teléfono de Contacto</label>
+                    <input type="tel" name="telefono" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;" placeholder="809-000-0000">
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: bold;">Correo Electrónico</label>
+                <input type="email" name="_replyto" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: bold;">Interés en el Nivel:</label>
+                <select name="nivel" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                    <option value="Primaria">Básico / Primaria</option>
+                    <option value="Tecnico-Informatica">Bachillerato Técnico en Informática</option>
+                    <option value="Tecnico-Gestion">Bachillerato Técnico en Gestión</option>
+                </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 30px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: bold;">Mensaje o Consulta</label>
+                <textarea name="mensaje" rows="5" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;" placeholder="Escriba su consulta aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer; font-size: 1.1rem;">
+                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+            </button>
+        </form>
+    </div>
+</section>
 </section>
