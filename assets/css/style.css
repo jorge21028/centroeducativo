@@ -742,3 +742,24 @@ body {
     font-size: 40px;
     cursor: pointer;
 }
+/* Estilos para la lista de servicios */
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    color: #444;
+}
+
+/* Mejora visual de las tarjetas al pasar el mouse */
+.card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: #fff;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.08);
+}
