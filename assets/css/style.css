@@ -853,3 +853,27 @@ body {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px; /* Mueve la línea vertical a la izquierda */
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px; /* Espacio para la línea */
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-dot {
+        left: 10px; /* Alinea el punto con la línea de la izquierda */
+    }
+    
+    .timeline-date {
+        position: relative;
+        top: 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
