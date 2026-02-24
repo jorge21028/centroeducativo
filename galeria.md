@@ -13,7 +13,7 @@ title: Galería de Fotos
             <img src="{{ album.portada | relative_url }}" alt="{{ album.title }}">
         </div>
         <h3>{{ album.title }}</h3>
-        <p>{{ album.descripcion }}</p>
+        <p>{{ album.descripcion }}</p><br>
         <a href="{{ album.url | relative_url }}" class="btn-cta">Ver Álbum</a>
     </article>
     {% endfor %}
