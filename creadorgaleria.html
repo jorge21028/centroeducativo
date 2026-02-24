@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Álbum YAML - Jorge Luis Abreu</title>
+    <link rel="stylesheet" href="stylecreadorgaleria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="editor-panel">
+            <h2><i class="fas fa-table"></i> Datos del Álbum</h2>
+            
+            <div class="input-group">
+                <label>Título</label>
+                <input type="text" id="postTitle" placeholder="Ej: Nuestros Laboratorios">
+            </div>
+
+            <div class="input-group">
+                <label>Descripción</label>
+                <input type="text" id="postDesc" placeholder="Ej: Contamos con tecnología de punta...">
+            </div>
+
+            <div class="input-group">
+                <label>URL Portada</label>
+                <input type="text" id="postPortada" placeholder="URL de la imagen de portada">
+            </div>
+
+            <div class="input-group">
+                <label>Lista de Fotos (Máximo 20)</label>
+                <div id="galleryItemsContainer">
+                    </div>
+            </div>
+
+            <div class="actions">
+                <button onclick="downloadMarkdown()" class="btn-download">
+                    <i class="fas fa-file-export"></i> Descargar .md
+                </button>
+            </div>
+        </aside>
+
+        <main class="preview-panel">
+            <div class="preview-header">
+                <i class="fas fa-eye"></i> Vista Previa Estructural
+            </div>
+            <div id="markdown-render"></div>
+        </main>
+    </div>
+    <script src="scriptcreadorgaleria.js"></script>
+</body>
+</html>
