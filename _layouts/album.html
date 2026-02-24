@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="contenedor-personal">
+    <a href="/galeria" class="leer-mas"><i class="fas fa-arrow-left"></i> Volver a Galería</a>
+    <h2 class="titulo-area">{{ page.title }}</h2>
+    <p>{{ page.descripcion }}</p>
+
+    <div class="grid-galeria">
+        {% for foto in page.fotos %}
+        <div class="card-foto" onclick="abrirVisor('{{ foto.url | relative_url }}', '{{ foto.texto }}')">
+            <img src="{{ foto.url | relative_url }}" alt="{{ foto.texto }}">
+            <p class="pie-foto">{{ foto.texto }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div id="visorModal" class="modal-visor" onclick="this.style.display='none'">
+    <span class="close-visor">&times;</span>
+    <img class="modal-content-img" id="imgFull">
+    <div id="caption-visor"></div>
+</div>
+
+<script>
+function abrirVisor(src, text) {
+    document.getElementById("visorModal").style.display = "block";
+    document.getElementById("imgFull").src = src;
+    document.getElementById("caption-visor").innerHTML = text;
+}
+</script>
