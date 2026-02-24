@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor de Posts - Feria Tecnológica</title>
+    <title>Editor de Posts - Feria de Innovación</title>
     <link rel="stylesheet" href="stylepost.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="editor-panel">
-            <h2>Configuración del Post</h2>
+            <h2><i class="fas fa-edit"></i> Configuración</h2>
+            
             <div class="input-group">
                 <label>Título del Post</label>
-                <input type="text" id="postTitle" value="Éxito total en la Feria de Innovación Tecnológica 2026">
+                <input type="text" id="postTitle" placeholder="Ej: Éxito total en la Feria 2026">
             </div>
+
             <div class="input-group">
-                <label>URL Imagen Principal (Header)</label>
-                <input type="text" id="mainImg" value="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80">
+                <label>URL Imagen Principal (Frontmatter)</label>
+                <input type="text" id="mainImg" placeholder="https://url-de-la-imagen.jpg">
             </div>
+
             <div class="input-group">
-                <label>Texto Introductorio</label>
-                <textarea id="introText" rows="4">El pasado viernes, nuestro centro educativo se convirtió en el epicentro de la creatividad...</textarea>
+                <label>Introducción (HTML permitido)</label>
+                <textarea id="introText" rows="5" placeholder="El pasado viernes, nuestro centro educativo..."></textarea>
             </div>
+
             <div class="input-group">
-                <label>URL Imagen de Galería</label>
-                <input type="text" id="galleryImg" value="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=869&auto=format&fit=crop">
+                <label>Galería de Imágenes (Máximo 10)</label>
+                <div id="galleryInputsContainer">
+                    </div>
             </div>
+
             <div class="actions">
                 <button onclick="downloadMarkdown()" class="btn-download">
-                    <i class="fas fa-save"></i> Descargar .md
+                    <i class="fas fa-file-download"></i> Descargar .md
                 </button>
             </div>
         </aside>
 
         <main class="preview-panel">
+            <div class="preview-header">
+                <i class="fas fa-eye"></i> Vista Previa en Tiempo Real
+            </div>
             <div id="markdown-render">
                 </div>
         </main>
