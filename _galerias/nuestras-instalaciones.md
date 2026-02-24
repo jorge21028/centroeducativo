@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: album
 title: "Nuestras instalaciones"
 date: 2026-02-24
 categories: galeria
