@@ -5,7 +5,7 @@ title: Panel de Utilidades
 
 <section class="personal-hero">
     <h1>Herramientas del Administrador</h1>
-    <p>Acceso centralizado a utilidades de automatización y gestión docente.</p>
+    <p>Acceso centralizado a utilidades del sitio.</p>
 </section>
 
 <div class="contenedor-personal">
