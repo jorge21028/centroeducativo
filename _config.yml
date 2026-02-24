@@ -9,3 +9,6 @@ collections:
   galerias:
     output: true
     permalink: /galeria/:path/
+collections:
+  profesores:
+    output: false # No necesitan una página individual, solo se mostrarán en la lista
