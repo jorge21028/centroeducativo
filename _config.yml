@@ -5,3 +5,7 @@
 
 baseurl: "/centroeducativo" 
 url: "https://jorge21028.github.io"
+collections:
+  galerias:
+    output: true
+    permalink: /galeria/:path/
