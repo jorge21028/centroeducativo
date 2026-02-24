@@ -3,7 +3,7 @@ layout: album
 title: "Nuestras instalaciones"
 date: 2026-02-24
 categories: galeria
-image: "https://images.unsplash.com/photo-1616512659455-111d3367649f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D"
+image: "https://images.unsplash.com/photo-1599725427295-6ed79ff8dbef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D"
 ---
 <section class="post-content-styled">
         <div class="card-egresado" style="margin-bottom: 40px;">
