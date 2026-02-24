@@ -1,0 +1,11 @@
+- nombre: "Generador de Posts"
+  descripcion: "Crea archivos .md para noticias automáticamente con formato Jekyll."
+  icono: "fas fa-edit"
+  url: "/post.html"
+  color_borde: "#003876"
+
+- nombre: "Gestor de Galería"
+  descripcion: "Organiza imágenes y genera el archivo .md para nuevos álbumes."
+  icono: "fas fa-images"
+  url: "creadorgaleria.html"
+  color_borde: "#d52b1e"
